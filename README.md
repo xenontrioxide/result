@@ -33,11 +33,11 @@ int main()
   const auto& [value, error] = divide(10, 5);
   if(error)
   {
-    std::print(std::cout, "Error was: {}\n", *error);
+    std::print("Error was: {}\n", *error);
     return 1;
   }
 
-  std::print(std::cout, "Value is: {}\n", value);
+  std::print("Value is: {}\n", value);
   return 0;
 }
 ```

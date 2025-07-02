@@ -33,3 +33,10 @@ if(RESULT_BUILD_TESTS)
     enable_testing()
     add_subdirectory(test)
 endif()
+
+# Enable / Disable examples
+option(RESULT_BUILD_EXAMPLES "Enable result examples." ON)
+
+if(RESULT_BUILD_EXAMPLES)
+    add_subdirectory(examples)
+endif()
